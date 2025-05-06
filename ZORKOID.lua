@@ -92,6 +92,11 @@ PortalAuth()
 else
 print("You are now stuck in the shadow realm forever.")
 end
+if input == "RESET"
+then
+booted = 0
+os.execute("computer.shutdown(true)")
+end
 end
 
 if input == "leave"
