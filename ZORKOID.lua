@@ -1,9 +1,11 @@
---Setup Functions
+--Setup Functions, Sets up the game.
 
+--just intializes some variables.
 local computer = require("computer")
 mr = 0
 ln = 0
 
+--Checks if the game has been played before.
 if booted ~= 1
 then
 end1 = 0
@@ -13,16 +15,19 @@ booted = 1
 end
 
 function Intro()
+--This is the bit that adds the intro.
 print("Max Rowland (C)opyright 2025")
 
 print("ZORKOID")
 end
 
 function sleep(n)
+--This pauses the code without the use of an external API.
   os.execute("sleep " .. tonumber(n))
 end
 
 function EndMelody01()
+--This is the end melody of ending 1.
 computer.beep(500, 0.15)
 computer.beep(750, 0.15)
 computer.beep(1000, 0.15)
@@ -30,18 +35,21 @@ computer.beep(500, 0.15)
 end
 
 function EndMelody02()
+--This is the end melody of ending 2.
 computer.beep(1000, 0.15)
 computer.beep(750, 0.15)
 computer.beep(500, 0.15)
 end
 
 function EndMelody03()
+--This is the end melody of ending 3.
 computer.beep(500, 0.15)
 computer.beep(750, 0.15)
 computer.beep(1000, 1)
 end
 
 function Newline(x)
+--Prints a new line as many times as X is set to.
 repeat
   ln = ln + 1
 print(" ")
@@ -49,6 +57,7 @@ until ln == x
 end
 
 function PortalAuth()
+--this code check if all the endings are completed.
 if end1 == 1 and end2 == 1
 then
 print("You opened the portal and you are now out of Zork, Michigan.")
@@ -66,6 +75,8 @@ os.execute("cls")
 Intro()
 
 sleep(3)
+
+--This is the main gameplay code.
 
 print("You find yourself at an abandoned house in Zork, Michigan.")
 io.write('Do you go into the house or leave? ')
