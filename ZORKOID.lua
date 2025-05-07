@@ -69,6 +69,19 @@ print("You attempted to open the portal and failed, you are now cosmic spaghetti
 end
 end
 
+function EasterEgg()
+if input == "Artanium"
+then
+print("Github.vom")
+elseif input == "Xander"
+then
+print("Creator of XORKOID")
+elseif input == "Max"
+then
+print("Creator of ZORKOID")
+end
+end
+
 --Actual Gameplay code
 os.execute("cls")
 
@@ -81,6 +94,16 @@ sleep(3)
 print("You find yourself at an abandoned house in Zork, Michigan.")
 io.write('Do you go into the house or leave? ')
 input = io.read()
+if input == "Artanium"
+then
+print("Github.vom")
+elseif input == "Xander"
+then
+print("Creator of XORKOID")
+elseif input == "Max"
+then
+print("Creator of ZORKOID")
+end
 if input == "house"
 then
 print("You were eaten by a grue and taken to the shadow realm...")
@@ -92,23 +115,11 @@ PortalAuth()
 else
 print("You are now stuck in the shadow realm forever.")
 end
+end
 if input == "RESET"
 then
 booted = 0
 os.execute("computer.shutdown(true)")
-if input == "Artanium"
-then
-print("Github.vom")
-end
-if input == "Xander"
-then
-print("Creator of XORKOID")
-end
-if input == "Max"
-then
-print("Creator of ZORKOID")
-end
-end
 end
 
 if input == "leave"
@@ -169,4 +180,4 @@ then
 end1 = 1
 end
 end
-end 
+end
