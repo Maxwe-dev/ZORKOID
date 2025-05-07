@@ -96,14 +96,14 @@ if input == "RESET"
 then
 booted = 0
 os.execute("computer.shutdown(true)")
-if input = "Artanium"
+if input == "Artanium"
 then
 print("Github.vom")
 end
-if input = "Xander"
+if input == "Xander"
 then
 print("Creator of XORKOID")
-if input = "Max"
+if input == "Max"
 then
 print("Creator of ZORKOID")
 end
