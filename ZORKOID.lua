@@ -69,18 +69,6 @@ print("You attempted to open the portal and failed, you are now cosmic spaghetti
 end
 end
 
-function EasterEgg()
-if input == "Artanium"
-then
-print("Github.vom")
-elseif input == "Xander"
-then
-print("Creator of XORKOID")
-elseif input == "Max"
-then
-print("Creator of ZORKOID")
-end
-end
 
 --Actual Gameplay code
 os.execute("cls")
