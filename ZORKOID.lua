@@ -103,10 +103,10 @@ end
 if input == "Xander"
 then
 print("Creator of XORKOID")
+end
 if input == "Max"
 then
 print("Creator of ZORKOID")
-end
 end
 end
 end
